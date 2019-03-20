@@ -20,6 +20,17 @@
 				<p>I'm a <em>Graduate Research Assistant at</em> Systems Realization Laboratory. <a href="/about">Read more about my life...</a></p>
     		</div><!-- /.blurb -->
 		</div><!-- /.container -->
+		<script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+    <script>
+      window.WebChat.renderWebChat({
+        directLine: window.WebChat.createDirectLine({ token: 'YOUR_DIRECT_LINE_TOKEN' }),
+        userID: 'YOUR_USER_ID',
+        username: 'Web Chat User',
+        locale: 'en-US',
+        botAvatarInitials: 'WC',
+        userAvatarInitials: 'WW'
+      }, document.getElementById('webchat'));
+    </script>
 		<footer>
     		<ul>
         		<li><a href="mailto:gehendra11@gmail.com">email</a></li>
