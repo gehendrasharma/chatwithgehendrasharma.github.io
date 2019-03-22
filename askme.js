@@ -1,5 +1,5 @@
 var questionNum = 0;													// keep count of question, used for IF condition.
-var question = '<h1>Hello! What would you like to know?</h1>';				  // first question
+var question = '<h1>Hello! May I know your name?</h1>';				  // first question
 
 var output = document.getElementById('output');				// store id="output" in output variable
 output.innerHTML = question;													// ouput first question
