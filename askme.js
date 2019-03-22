@@ -14,7 +14,7 @@ function bot() {
     question = '<h1>how old are you?</h1>';			    	// load next question		
     setTimeout(timedQuestion, 2000);									// output next question after 2sec delay
     }
-
+    
     else if (questionNum == 1) {
     output.innerHTML = '<h1>That means you were born in ' + (2016 - input) + '</h1>';
     document.getElementById("input").value = "";   
