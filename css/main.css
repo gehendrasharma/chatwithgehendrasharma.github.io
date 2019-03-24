@@ -1,39 +1,178 @@
-* {
-	margin: 0;
-	padding: 0;
-}
-
-body {
-	background-color: #f0db4f;
-}
-
-h1, p {
-	font-family: sans-serif;
+.logo{
+	font-family: Proxima Nova, open sans, sans-serif ;
+	font-weight: 2em;
+	/*color: #f33232;*/
+	color: black;
 	text-align: center;
-	color: #323330;
-	font-size:  100px;
+	font-size: 24px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 
-p {
-	font-size: 30px;
-}
-
-#output, #container {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-}
 
 
-input {
-    background-color: #eee;
-    border: none;
-    font-family: sans-serif;
-    color: #000;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
+.cover{
+      background: #ffe200; /* fallback for old browsers */
+      background: -webkit-linear-gradient(to bottom, #ffe200,#fdeb5c);  /* Chrome 10-25, Safari 5.1-6 */
+      background:linear-gradient(to bottom, #610bb7,#7f00ff);
 }
+
+body{
+	margin: 0px;
+}
+
+
+
+input[type="checkbox"] {
+	margin: 450px;
+    position: absolute;
+    margin-left: -9999px;
+}
+
+.check.check:before  {
+   font-family: FontAwesome;
+    content: "\f006";
+    position: relative;
+    font-size: 16px;
+    margin: 12px 15px;
+    line-height: 16px;
+    z-index: 999;
+    color: #ff6200;
+ }
+
+ .check:hover {
+
+ 	cursor: pointer;
+ 	 position: relative;
+   font-family: FontAwesome;
+     content: "\f005";
+     line-height: 18px;
+   font-size: 16px;
+    z-index: 999;
+   
+}
+
+
+.check.checked:after {
+
+  font-family: FontAwesome;
+    content: "\f005";
+    position: relative;
+    font-size: 16px;
+   margin: 12px -30px;
+    line-height: 16px;
+  
+    z-index: 999;
+    color: #ff6200;
+}
+
+
+section{
+	text-align: center;
+	padding-bottom: 5%;	
+}
+
+@media(min-width: 375px) and (max-width: 539px){
+section{
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;	
+ }
+}
+
+
+
+#resume-heading{
+
+	margin-top: 4%;
+	font-family: Proxima Nova;
+	font-weight: 100px;
+	font-size: 18px;
+    color: #cccccc;
+}
+
+
+@media(min-width: 375px) and (max-width: 539px){
+.bkmark
+{    
+	padding:0px 10px 0px 10px;
+	margin-top: 4%;
+	font-family: Proxima Nova;
+	font-weight: 100px;
+	font-size: 18px;
+	color: #cccccc
+	font-style:italic;
+}
+
+}
+
+.bkmark
+{    
+	line-height: 2em;
+	margin-top: 4%;
+	font-family: Proxima Nova;
+	font-weight: 100px;
+	font-size: 18px;
+	color: #cccccc
+	font-style:italic;
+}
+
+
+
+.new-resume-heading{
+	margin-top: 4%;
+	font-family: Proxima Nova;
+	font-size: 18px;
+	color: black;
+	font-style: normal;
+}
+@media (min-width:790px){
+ul {
+    /*padding: 0px 450px;*/
+    padding: 0px 30%;
+    list-style-type: circle;
+}}
+
+@media (min-width:450px) and (max-width: 790px){
+ul {
+    padding: 0px 100px;
+    list-style-type: circle;
+}}
+
+
+ul {
+    list-style-type: circle;
+}
+
+
+.liClass{
+	line-height: 2em;
+	text-align: left;
+    padding: 10px;
+    list-style-type: circle;
+    color: black;
+    font-family: open sans;
+    font-size: 14px;
+}
+
+
+.description{
+	padding: 0px 10%;
+	font-family: Open sans;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 2em;
+	color: #888686;
+}
+
+
+
+.iot{
+    width: 232px;
+    height: 236px;
+}
+
+
+
+
