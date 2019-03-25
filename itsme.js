@@ -54,7 +54,7 @@ var botui = new BotUI('hello-world');
   }).then(function(){
      return botui.message.bot({ // second one
       delay: 1000, // wait 1 sec.
-      content: 'I am Gehendra, a mechanical engineering graduate at University of Oklahoma 👩‍🎓'
+      content: 'I am Gehendra, a mechanical engineering graduate at University of Oklahoma 🎓'
      });
   }).then(function(index){ // will send the index of the previous message to the showBookmark function which shows a star icon against the message.
       setTimeout(showBookmark(index),1500);   
