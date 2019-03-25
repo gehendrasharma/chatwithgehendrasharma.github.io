@@ -15,7 +15,7 @@
 .cover{
       background: #ffe200; /* fallback for old browsers */
       background: -webkit-linear-gradient(to bottom, #ffe200,#fdeb5c);  /* Chrome 10-25, Safari 5.1-6 */
-      background:linear-gradient(to bottom, #610bb7,#7f00ff);
+      background:linear-gradient(to bottom,rgb(125, 11, 183),#155d56);
 }
 
 body{
