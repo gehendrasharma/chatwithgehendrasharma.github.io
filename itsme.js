@@ -649,46 +649,8 @@ var exploration = function(){
 
 }
 
-var achievements = function(){
-
-  return botui.message.bot({
-   human: true,
-   delay: 1000, // wait 1 sec.
-   content: 'Tell me about your achievements'
-  }).then(function () {
-      return botui.message.bot({ // second one
-      delay: 1000, // wait 1 sec.
-      content: 'Our team won the first runners-up at OzCHI24 2015, an International Student Design competition organized by OzCHI conference in Australia. It was a 24hr long Desiathon where we designed an AR based app that could help people beat social isolation',
-      });
-    }).then(function () {
-      return botui.message.bot({ // second one
-      delay: 1000, // wait 1 sec.
-      content: 'Our study on Tangible learning kit won the best students paper award at IHCI',
-      });
-    });
 
 
-}
-
-var book = function(){
-
-  return botui.message.bot({
-   human: true,
-   delay: 1000, // wait 1 sec.
-   content: 'What are you reading these days?'
-  }).then(function () {
-      return botui.message.bot({ // second one
-      delay: 1000, // wait 1 sec.
-      content: 'I have just started reading Golden Krishnas "The Best Interface Is No Interface" 📖. Hoping to get some useful insights about designing natural user interfaces',
-      });
-    });
-
-
-}
-
-
-
-}
 
 var touch = function(){
 
