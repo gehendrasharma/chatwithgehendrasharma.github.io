@@ -38,7 +38,7 @@ a.botui-message-content-link:focus{outline:thin dotted}a.botui-message-content-l
 }
 
 .botui-container{
-	width:80%;
+	width:1000%;
 	height:100%;
 	overflow-y:auto;
     overflow-x:hidden
