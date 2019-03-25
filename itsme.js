@@ -105,7 +105,8 @@ var botui = new BotUI('hello-world');
            content: 'Shoot me a mail at gehendra11@ou.edu', 
 
             }).then(function(index){
-                     setTimeout(showBookmark(index),1500);   
+                     setTimeout(showBookmark(index),1500);  
+             }); 
         } 
 
         else {
