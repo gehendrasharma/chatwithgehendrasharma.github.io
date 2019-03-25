@@ -1,4 +1,4 @@
-$(document).ready(function(){
+d$(document).ready(function(){
    
   //$('.drawer-hamburger').css({"padding":"40px 1.75rem 40px"});
 
@@ -54,7 +54,7 @@ var botui = new BotUI('hello-world');
   }).then(function(){
      return botui.message.bot({ // second one
       delay: 1000, // wait 1 sec.
-      content: 'I am Samadrita, a product designer currently studying Human Computer Interaction at CMU 👩‍🎓'
+      content: 'I am Gehendra, a mechanical engineering graduate With demonstrated history in design and development of mechanical components and assembly for transmission 🎓'
      });
   }).then(function(index){ // will send the index of the previous message to the showBookmark function which shows a star icon against the message.
       setTimeout(showBookmark(index),1500);   
@@ -67,33 +67,20 @@ var botui = new BotUI('hello-world');
      return botui.action.text({ // will print whatever was typed in the field.
      delay: 800,
      action: {
-        value: 'John Doe',
+        value: 'John',
         placeholder: 'Your name'
     }
     });
   }).then(function (res) { // will be called when it is submitted.
       return botui.message.bot({
       delay: 500,
-      content: 'Alright '+ res.value + '! Before we get started a quick heads up',
+      content: 'Welcome to my page, '+ res.value + '! I am glad that you are here',
       });
  }).then(function () { 
       return botui.message.bot({
       delay: 1200,
-      content:  'I tend to talk, ALOT 😬.'
+      content:  'Lets get started. What would you like to know about me?'
     }); // will print whatever was typed in the field.
-
-  }).then(function () { // will be called when it is submitted.
-      return botui.message.bot({
-      delay: 1000,
-      type: 'embed',
-      content:  'https://giphy.com/embed/l2RnootA2yelmseL6'
-    }); 
-
-  }).then(function () { 
-      return botui.message.bot({
-      delay: 4000,
-      content:  'So feel free to skip the conversation by clicking the hamburger icon on the left and jumping to specific questions you have in mind'
-    }); 
 
   }).then(function () {
 
@@ -115,17 +102,10 @@ var botui = new BotUI('hello-world');
         if(res.value == 'reach_out') {
           return botui.message.bot({ 
            delay: 1000, 
-           content: 'Shoot me a mail at samadrid@andrew.cmu.edu', 
+           content: 'Shoot me a mail at gehendra11@ou.edu', 
 
             }).then(function(index){
                      setTimeout(showBookmark(index),1500);   
-
-            }).then(function (){
-                       return botui.message.bot({ 
-                       delay: 1000,
-                       content: 'Alternatively if you are in Pittsburgh, I am always down for coffee ☕' ,
-                       });
-                     }); 
         } 
 
         else {
@@ -137,8 +117,8 @@ var botui = new BotUI('hello-world');
              delay: 1000,
              action: [
                     { 
-                      text: 'Share your journey',
-                      value: 'journey'
+                      text: 'Tell me about yourself',
+                      value: 'aboutme'
                       
                     },
                     {
@@ -153,21 +133,14 @@ var botui = new BotUI('hello-world');
                {
                   return botui.message.bot({ 
                   delay: 1000,
-                  content: 'Prior to CMU, I was working as a Product designer at Practo, a leading healthcare startup in India. As part of the book team, I was responsible for the booking experience of the patients in the Prato platform.'
+                  content: 'Currently, I am a graduate research assistant at OU. Prior to this, I was working as a research engineer at Esco Couplings & Transmisions Pvt.Ltd.'
                   }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
                       }).then(function(){
                           return botui.message.bot({ 
                             delay: 1000,
-                            content: 'In the summer of 2015, I interned as a UX designer at Amazon India where I was responsible for redesigning the detail page for amazon mobile app'
+                            content: 'In the summer of 2017, I also interned at Tata Research Development and Design Center where I was responsible for developing ontology and bond graph for gearbox.'
                             });
-                      }).then(function(index){
-                      setTimeout(showBookmark(index),1500);   
-                      }).then(function(){
-                           return botui.message.bot({ 
-                            delay: 1000,
-                           content: 'I have also worked as a research associate at Embedded Interactions lab and worked with Samsung over a year to design accessibility features for their flagship models'
-                          });
                       }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
                       }).then(function () {
@@ -190,7 +163,7 @@ var botui = new BotUI('hello-world');
                                 if(res.value == 'more') {
                                   return botui.message.bot({ 
                                    delay: 1000, 
-                                   content: 'While these experiences have helped me consolidate my learning of Human-centric Design processes they have also made me aware of the intricacies involved in developing products and services which are shippable to the commercial market', 
+                                   content: 'While these experiences have helped me consolidate my learning, they have also made me aware of the intricacies involved in designing and developing mechanical systems', 
                                     }).then(function(index){
                                     setTimeout(showBookmark(index),1500);   
 
@@ -205,13 +178,13 @@ var botui = new BotUI('hello-world');
                                 else{
                                   return botui.message.bot({ 
                                   delay: 1000, 
-                                  content: 'Shoot me a mail at samadrid@andrew.cmu.edu', 
+                                  content: 'Shoot me a mail at gehendra11@ou.edu', 
                                   }).then(function(index){
                                      setTimeout(showBookmark(index),1500);   
                                   }).then(function (){
                                      return botui.message.bot({ 
                                       delay: 1000,
-                                      content: 'Alternatively if you are in Pittsburgh, I am always down for coffee ☕' ,
+                                      content: 'Alternatively if I am in Norman, I am available for personal meeting' ,
                                       });
                                   }); 
 
@@ -223,28 +196,14 @@ var botui = new BotUI('hello-world');
                       return botui.message.bot({ 
                         // show first message
                         delay: 1000,
-                        content: 'I was born in Assam, a state in North-East India and grew up in Mumbai.'
-                        }).then(function(){
-                        return botui.message.bot({ 
-                        // show first message
-                        delay: 1000,
-                        content: 'Having changed over more than 5 schools while growing up, I can easily adapt to newer environments and attempt to understand and embrace change positively'
-                        });
-                      }).then(function(index){
+                        content: 'I was born in Kathmandu, capital city of Nepal.'
+                        }).then(function(index){
                         setTimeout(showBookmark(index),1500);   
                         }).then(function(){
                         return botui.message.bot({ 
                         // show first message
                         delay: 1000,
-                        content: 'I pursued design in my Indian Institute of Technology, Guwahati which is a premier engineering institute in India. It was here when I was formally introduced to the world that does the magic behind and beyond the screens 🖥️'
-                        });
-                      }).then(function(index){
-                        setTimeout(showBookmark(index),1500);   
-                        }).then(function(){
-                        return botui.message.bot({ 
-                        // show first message
-                        delay: 1000,
-                        content: 'Questions like how would people make sense of the growing technology would fascinate me. This brought me to CMU to study HCI '
+                        content: 'I pursued mechanical engineering at Motilal Nehru Institute of Technology, Allahabad in India.'
                         });
                       }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
@@ -269,14 +228,14 @@ var botui = new BotUI('hello-world');
                   return botui.message.bot({ 
                       // show first message
                       delay: 1000,
-                      content: 'I have hands-on experience with both conducting UX research as well designing user interfaces.'
+                      content: 'I have hands-on experience in prototyping and testing components and assembly of transmission system.'
                       }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
                     }).then(function(){
                       return botui.message.bot({ 
                       // show first message
                       delay: 1000,
-                      content: 'Proficient in Sketch, Adobe Photoshop, Adobe Illustrator, Adobe Indesign and Principle'
+                      content: 'Proficient in design, analysis, modelling and simulation'
                       });
                     }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
@@ -284,7 +243,7 @@ var botui = new BotUI('hello-world');
                       return botui.message.bot({ 
                       // show first message
                       delay: 1000,
-                      content: 'Comfortable with HTML, CSS, Javascript, Jquery, C++/C'
+                      content: 'Comfortable with C, R, Python, MATLAB'
                       });
                     }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
@@ -292,7 +251,7 @@ var botui = new BotUI('hello-world');
                       return botui.message.bot({ 
                       // show first message
                       delay: 1000,
-                      content: 'Occasionally tinker with arduino and sensors to build interactive prototypes '
+                      content: 'Hands-on experience with Solidworks, AutoCAD, Abaqus and NX. '
                       });
                     }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
@@ -302,21 +261,14 @@ var botui = new BotUI('hello-world');
               else{
                     return botui.message.bot({ 
                   delay: 1000,
-                  content: 'Prior to CMU, I was working as a Product designer at Practo, a leading healthcare startup in India. As part of the book team, I was responsible for the booking experience of the patients in the Prato platform.'
+                  content: 'Prior to OU, Prior to this, I was working as a research engineer at Esco Couplings & Transmisions Pvt.Ltd.'
                   }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
                       }).then(function(){
                           return botui.message.bot({ 
                             delay: 1000,
-                            content: 'In the summer of 2015, I interned as a UX designer at Amazon India where I was responsible for redesigning the detail page for amazon mobile app'
+                            content: 'In the summer of 2017, I also interned at Tata Research Development and Design Center where I was responsible for developing ontology and bond graph for gearbox.'
                             });
-                      }).then(function(index){
-                      setTimeout(showBookmark(index),1500);   
-                      }).then(function(){
-                           return botui.message.bot({ 
-                            delay: 1000,
-                           content: 'I have also worked as a research associate at Embedded Interactions lab and worked with Samsung over a year to design accessibility features for their flagship models'
-                          });
                       }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
                       }).then(function () {
@@ -339,7 +291,7 @@ var botui = new BotUI('hello-world');
                                 if(res.value == 'more') {
                                   return botui.message.bot({ 
                                    delay: 1000, 
-                                   content: 'While these experiences have helped me consolidate my learning of Human-centric Design processes they have also made me aware of the intricacies involved in developing products and services which are shippable to the commercial market', 
+                                   content: 'While these experiences have helped me consolidate my learning, they have also made me aware of the intricacies involved in designing and developing mechanical systems', 
                                     }).then(function(index){
                                     setTimeout(showBookmark(index),1500);   
 
@@ -354,13 +306,13 @@ var botui = new BotUI('hello-world');
                                 else{
                                   return botui.message.bot({ 
                                   delay: 1000, 
-                                  content: 'Shoot me a mail at samadrid@andrew.cmu.edu', 
+                                  content: 'Shoot me a mail at gehendra11@ou.edu', 
                                   }).then(function(index){
                                      setTimeout(showBookmark(index),1500);   
                                   }).then(function (){
                                      return botui.message.bot({ 
                                       delay: 1000,
-                                      content: 'Alternatively if you are in Pittsburgh, I am always down for coffee ☕' ,
+                                      content: 'Alternatively if I am in Norman, I am available for personal meeting' ,
                                       });
                                   }); 
 
@@ -385,12 +337,8 @@ var botui = new BotUI('hello-world');
 
 
 // Click functions for the links in the drawer
-document.getElementById("journey").onclick=function(){
+document.getElementById("aboutme").onclick=function(){
   journey();
-}
-
-document.getElementById("philosophy").onclick=function(){
-  philosophy();
 }
 
 document.getElementById("experience").onclick=function(){
@@ -404,27 +352,6 @@ document.getElementById("interest").onclick=function(){
 
 document.getElementById("skills").onclick=function(){
   skills();
-}
-
-document.getElementById("research").onclick=function(){
-  research();
-}
-
-document.getElementById("exploration").onclick=function(){
-  exploration();
-}
-
-document.getElementById("achievements").onclick=function(){
-  achievements();
-}
-
-
-document.getElementById("book").onclick=function(){
- book();
-}
-
-document.getElementById("facts").onclick=function(){
- facts();
 }
 
 document.getElementById("touch").onclick=function(){
