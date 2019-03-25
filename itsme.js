@@ -153,20 +153,20 @@ var botui = new BotUI('hello-world');
                {
                   return botui.message.bot({ 
                   delay: 1000,
-                  content: 'Prior to OU, I was working as a research engineer at Esco Couplings & Transmissions Pvt.Ltd. in India.'
+                  content: 'Currently, I was a graduate research assistant at Systems Realization Laboratory.'
                   }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
                       }).then(function(){
                           return botui.message.bot({ 
                             delay: 1000,
-                            content: 'In the summer of 2017, I was interned at Tata Research Centre.'
+                            content: 'Prior to OU, I was working as a research engineer at Esco Couplings & Transmissions Pvt.Ltd. in India.'
                             });
                       }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
                       }).then(function(){
                            return botui.message.bot({ 
                             delay: 1000,
-                           content: 'I have also worked as a research associate at Embedded Interactions lab and worked with Samsung over a year to design accessibility features for their flagship models'
+                           content: 'In the summer of 2017, I also interned at Tata Research Centre.'
                           });
                       }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
@@ -228,7 +228,7 @@ var botui = new BotUI('hello-world');
                         return botui.message.bot({ 
                         // show first message
                         delay: 1000,
-                        content: 'Having changed over more than 5 schools while growing up, I can easily adapt to newer environments and attempt to understand and embrace change positively'
+                        content: 'Having studied and worked with people with different background, I am able to adapt to change'
                         });
                       }).then(function(index){
                         setTimeout(showBookmark(index),1500);   
@@ -236,7 +236,7 @@ var botui = new BotUI('hello-world');
                         return botui.message.bot({ 
                         // show first message
                         delay: 1000,
-                        content: 'I pursued design in my Indian Institute of Technology, Guwahati which is a premier engineering institute in India. It was here when I was formally introduced to the world that does the magic behind and beyond the screens 🖥️'
+                        content: 'I pursued mechanical engineering at Motilal Nehru Institute of Technology, Allahabad in India. It was here I learned the fundamentals in mechanical engineering.'
                         });
                       }).then(function(index){
                         setTimeout(showBookmark(index),1500);   
@@ -244,7 +244,7 @@ var botui = new BotUI('hello-world');
                         return botui.message.bot({ 
                         // show first message
                         delay: 1000,
-                        content: 'Questions like how would people make sense of the growing technology would fascinate me. This brought me to CMU to study HCI '
+                        content: 'My interest to learn different facets of mechanical design brought me to University of Oklahoma.'
                         });
                       }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
@@ -269,14 +269,14 @@ var botui = new BotUI('hello-world');
                   return botui.message.bot({ 
                       // show first message
                       delay: 1000,
-                      content: 'I have hands-on experience with both conducting UX research as well designing user interfaces.'
+                      content: 'I have hands-on experience on design and analysis of mechanical components and assembly.'
                       }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
                     }).then(function(){
                       return botui.message.bot({ 
                       // show first message
                       delay: 1000,
-                      content: 'Proficient in Sketch, Adobe Photoshop, Adobe Illustrator, Adobe Indesign and Principle'
+                      content: 'Proficient in design, analysis, modelling and simulation'
                       });
                     }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
@@ -284,7 +284,7 @@ var botui = new BotUI('hello-world');
                       return botui.message.bot({ 
                       // show first message
                       delay: 1000,
-                      content: 'Comfortable with HTML, CSS, Javascript, Jquery, C++/C'
+                      content: 'Comfortable with Solidworks, Creo, AutoCAD, NX and Abaqus'
                       });
                     }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
@@ -292,7 +292,7 @@ var botui = new BotUI('hello-world');
                       return botui.message.bot({ 
                       // show first message
                       delay: 1000,
-                      content: 'Occasionally tinker with arduino and sensors to build interactive prototypes '
+                      content: 'Ability to code in MATLAB, Python, C, and R'
                       });
                     }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
@@ -302,20 +302,20 @@ var botui = new BotUI('hello-world');
               else{
                     return botui.message.bot({ 
                   delay: 1000,
-                  content: 'Prior to OU, I was working as a Product designer at Practo, a leading healthcare startup in India. As part of the book team, I was responsible for the booking experience of the patients in the Prato platform.'
+                  content: 'Currently, I was a graduate research assistant at Systems Realization Laboratory.'
                   }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
                       }).then(function(){
                           return botui.message.bot({ 
                             delay: 1000,
-                            content: 'In the summer of 2015, I interned as a UX designer at Amazon India where I was responsible for redesigning the detail page for amazon mobile app'
+                            content: 'Prior to OU, I was working as a research engineer at Esco Couplings & Transmissions Pvt.Ltd. in India.'
                             });
                       }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
                       }).then(function(){
                            return botui.message.bot({ 
                             delay: 1000,
-                           content: 'I have also worked as a research associate at Embedded Interactions lab and worked with Samsung over a year to design accessibility features for their flagship models'
+                           content: 'In the summer of 2017, I also interned at Tata Research Centre.'
                           });
                       }).then(function(index){
                       setTimeout(showBookmark(index),1500);   
@@ -339,7 +339,7 @@ var botui = new BotUI('hello-world');
                                 if(res.value == 'more') {
                                   return botui.message.bot({ 
                                    delay: 1000, 
-                                   content: 'While these experiences have helped me consolidate my learning of Human-centric Design processes they have also made me aware of the intricacies involved in developing products and services which are shippable to the commercial market', 
+                                   content: 'While these experiences have helped me consolidate my learning, they have also made me aware of the intricacies involved in designing and developing products for mechanical systems', 
                                     }).then(function(index){
                                     setTimeout(showBookmark(index),1500);   
 
@@ -354,7 +354,7 @@ var botui = new BotUI('hello-world');
                                 else{
                                   return botui.message.bot({ 
                                   delay: 1000, 
-                                  content: 'Shoot me a mail at samadrid@andrew.cmu.edu', 
+                                  content: 'Shoot me a mail at gehendra11@ou.edu', 
                                   }).then(function(index){
                                      setTimeout(showBookmark(index),1500);   
                                   }).then(function (){
@@ -450,14 +450,6 @@ var skills = function(){
 
 
 
-
-
-
-
-
-
-
-
 var aboutme = function(){
   
     return botui.message.bot({ 
@@ -474,14 +466,14 @@ var aboutme = function(){
   }).then(function(){
     return botui.message.bot({ 
     delay: 1000,
-    content: 'Having changed over more than 5 schools while growing up, I can easily adapt to newer environments and attempt to understand and embrace change positively'
+    content: 'Having studied and worked with people with different background, I am able to adapt to change'
     });
   }).then(function(index){
      setTimeout(showBookmark(index),1500);   
      }).then(function(){
     return botui.message.bot({ 
     delay: 1000,
-    content: 'I pursued design in my undergraduate. It was here when I was formally introduced to the world of (and behind ) the screens 🖥️'
+    content: 'I pursued mechanical engineering at Motilal Nehru Institute of Technology, Allahabad in India. It was here I learned the fundamentals in mechanical engineering.'
     });
   }).then(function(index){
      setTimeout(showBookmark(index),1500);   
@@ -554,13 +546,13 @@ var interest = function(){
 
               return botui.message.bot({ 
                delay: 1000, // wait 1 sec.
-              content: 'Shoot me a mail at samadrid@andrew.cmu.edu or connect to me https://www.linkedin.com/in/samadrita-das',    
+              content: 'Shoot me a mail at gehendra@ouu.edu or connect to me https://www.linkedin.com/in/gehendrasharma',    
               }).then(function(index){
                   setTimeout(showBookmark(index),1500);   
                   }).then(function (){
                       return botui.message.bot({ // let user do something
                       delay: 1000,
-                      content: 'Alternatively if you are in Pittsburgh, I am always down for coffee ☕' ,
+                      content: 'Alternatively if you are in Norman, I am available for chat' ,
                       });
         
                 }); 
